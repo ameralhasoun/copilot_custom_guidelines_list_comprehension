@@ -12,7 +12,11 @@ def get_even_numbers(numbers: list[int]) -> list[int]:
         >>> get_even_numbers([1, 2, 3, 4, 5, 6])
         [2, 4, 6]
     """
-    return [n for n in numbers if n % 2 == 0]
+    result = []
+    for n in numbers:
+        if n % 2 == 0:
+            result.append(n)
+    return result
 
 
 if __name__ == "__main__":
